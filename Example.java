@@ -1,6 +1,7 @@
 package Jan2018;
 import java.util.Scanner;
 
+//this exercise allows user to create 3 car objects (using a car class in this package) and print them out
 public class Example {
 public static void main(String[] args){
     //dedicate memory space for arrays Java.

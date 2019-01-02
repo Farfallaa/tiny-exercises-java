@@ -1,9 +1,10 @@
 package Jan2018;
 
+//this exercise creates a class called employee and calculates their  bonus
 public class Employee {
     private String name;
     private boolean isManager;
-    double salary;
+    private double salary;
 
 
     //constructor:

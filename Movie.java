@@ -6,7 +6,9 @@ public class Movie {
     private String director;
     private int releaseYear;
 
-
+    //default constructor:
+    public Movie(){
+    }
     //build constructor:
 
     public Movie(String title, String director, int releaseYear){
@@ -47,22 +49,23 @@ public class Movie {
         Scanner s = new Scanner(System.in);
 
         for(int i = 0; i< movie.length; i++) {
-            System.out.println("insert name of the first movie");
-            String movieName = s.nextLine();
+            movie[i] = new Movie();
+            System.out.println("insert name of the movie");
+            String movieName = s.next();
+            movie[i].setTitle(movieName);
             System.out.println("insert director");
-            String movieDirector = s.nextLine();
+            String movieDirector = s.next();
+            movie[i].setDirector(movieDirector);
             System.out.println("insert year ");
             int yearRelease = s.nextInt();
-
-            movie[i] = new Movie(movieName, movieDirector, yearRelease);
-            movie[i].setTitle(movieName);
-            movie[i].setDirector(movieDirector);
             movie[i].setReleaseYear(yearRelease);
+            //test movie:
             System.out.println("movie you entered was: " + movie[i].getTitle());
         }
+        System.out.println("Movies that have been created:");
 
         for(int i = 0; i< movie.length; i++){
-            System.out.println("movies you set were: " +movie[i].getTitle() + " by " + movie[i].getDirector() + " released in " + movie[i].getReleaseYear());
+            System.out.println(i+1 +". "+ movie[i].getTitle() + " by " + movie[i].getDirector() + " released in " + movie[i].getReleaseYear());
         }
 
 

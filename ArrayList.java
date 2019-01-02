@@ -1,7 +1,7 @@
 package Jan2018;
 import java.util.*;
 
-
+//This excercise creates an array list and adds members to that list and then prints them out.
 public class ArrayList {
     public static void main(String[] args){
         //create an Array list variable:

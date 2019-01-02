@@ -1,5 +1,7 @@
 package Jan2018;
 
+//this exercise is an example of single-dimentional and multi-dimentional arrays- their building, filling values using for loops and then printing them out in a pleasant to read manner
+
 public class arrays {
 
     public static void main(String[] args) {
